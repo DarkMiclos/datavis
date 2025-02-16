@@ -60,7 +60,7 @@ mounted() {
       return await axios.get("/api/v1/cryptocurrency/listings/latest", {
         headers: {
               'X-CMC_PRO_API_KEY': '2ddb25f6-3d62-42fb-82eb-be00fa8b1d01',
-              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Origin': 'https://datavis-eight.vercel.app/',
         },
       })
       .then(res =>  res.data.data)
@@ -71,7 +71,7 @@ mounted() {
       return await axios.get("/api/v3/fear-and-greed/latest", {
         headers: {
               'X-CMC_PRO_API_KEY': '2ddb25f6-3d62-42fb-82eb-be00fa8b1d01',
-              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Origin': 'https://datavis-eight.vercel.app/',
         },
       })
       .then(res =>  res.data.data)
@@ -81,7 +81,7 @@ mounted() {
     return await axios.get("/api/v3/fear-and-greed/historical", {
       headers: {
             'X-CMC_PRO_API_KEY': '2ddb25f6-3d62-42fb-82eb-be00fa8b1d01',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'https://datavis-eight.vercel.app/',
       },
     })
     .then(res =>  res.data.data)
